@@ -18,3 +18,7 @@
   --toast-success: #0cbfae;
   --loader-coler: #0cbfae;
 }
+.App{
+  background-image: url("../src/assets/Home/gradient.png");
+  background-size: cover;
+}

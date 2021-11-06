@@ -1,0 +1,14 @@
+.map{
+  background-image: url('https://www.marseille.fr/sites/default/files/styles/1280x550/public/background-map_0.png?itok=VuyMHTWj');
+text-align: center;
+line-height: 135px;
+color: aliceblue;
+margin-top: 50px;
+}
+.btn0{
+  color:aliceblue ;
+  
+}
+.batoon:hover{
+  background-color: grey;
+}

@@ -1,46 +1,84 @@
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
 
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
-export default function Carosl() {
+function Carosl() {
   return (
-    <div>
-            <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="kasbah.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="medina.jpg"
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="sfax.jpg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-    </div>
-  )
+    <Carousel className="caro" autoPlay>
+      <div
+        style={{ backgroundImage: 'url("../../assets//Home/Untitled-1.png")' }}
+      >
+        <img alt="" src="medina.jpg" />
+        <p className="legend">Legend 1</p>
+      </div>
+      <div>
+        <img alt="" src="sfax.jpg" />
+        <p className="legend">Legend 2</p>
+      </div>
+      <div>
+        <img alt="" src="kasbah.jpg" />
+        <p className="legend">Legend 3</p>
+      </div>
+      <div>
+        <img alt="" src="logo512.png" />
+        <p className="legend">Legend 4</p>
+      </div>
+      <div>
+        <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
+        <p className="legend">Legend 5</p>
+      </div>
+      <div>
+        <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+        <p className="legend">Legend 6</p>
+      </div>
+      <div>
+        <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" />
+        <p className="legend">Legend 7</p>
+      </div>
+      <div>
+        <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" />
+        <p className="legend">Legend 8</p>
+      </div>
+      <div>
+        <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" />
+        <p className="legend">Legend 9</p>
+      </div>
+      <div>
+        <img
+          alt=""
+          src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg"
+        />
+        <p className="legend">Legend 10</p>
+      </div>
+      <div>
+        <img
+          alt=""
+          src="http://lorempixel.com/output/cats-q-c-640-480-11.jpg"
+        />
+        <p className="legend">Legend 11</p>
+      </div>
+      <div>
+        <img
+          alt=""
+          src="http://lorempixel.com/output/cats-q-c-640-480-12.jpg"
+        />
+        <p className="legend">Legend 12</p>
+      </div>
+      <div>
+        <img
+          alt=""
+          src="http://lorempixel.com/output/cats-q-c-640-480-13.jpg"
+        />
+        <p className="legend">Legend 13</p>
+      </div>
+      <div>
+        <img
+          alt=""
+          src="http://lorempixel.com/output/cats-q-c-640-480-14.jpg"
+        />
+        <p className="legend">Legend 14</p>
+      </div>
+    </Carousel>
+  );
 }
+
+export default Carosl;

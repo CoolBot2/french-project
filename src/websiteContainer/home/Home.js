@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <Profile/>
-      <Foote/>
+      
     </div>
   )
 }

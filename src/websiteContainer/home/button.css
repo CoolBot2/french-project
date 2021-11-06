@@ -1,0 +1,17 @@
+.parent{
+  
+transform: translate(3.5%);
+  
+}
+.list-container{
+
+z-index: 0;
+
+}
+li{
+  margin: auto;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}

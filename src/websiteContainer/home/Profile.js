@@ -36,13 +36,7 @@ const Profile = () => {
             </div>
           </div>
           <div>
-            <div className="profile-details-name">
-              <span className="primary-text">
-                {" "}
-                Hello, This is{" "}
-                <span className="highlighted-text"> SFAX TOURISM </span>
-              </span>
-            </div>
+            
             <div className="profile-details-role">
               <span className="primary-text">
                 {" "}
@@ -51,15 +45,15 @@ const Profile = () => {
                   <Typical
                     loop={Infinity}
                     steps={[
-                      "deuxième ville de Tunisie 🏢",
+                      "deuxième ville en Tunisie 🏢",
                       1000,
-                      "producteur de huile d'olive 🕊️",
+                      "producteur d'huile d'olive 🕊️",
                       1000,
-                      "possede le plus grand port de pêche de Tunisie 🐟",
+                      "possède le plus grand port de pêche en Tunisie 🐟",
                       1000,
-                      "traitement du phosphate🏭",
+                      "pole pour le traitement des phosphates🏭",
                       1000,
-                      "a la plus grande ile en tunisie 🏝️",
+                      "a la deuxième plus grande ile en tunisie 🏝️",
                       1000,
                     ]}
                   />
@@ -67,7 +61,7 @@ const Profile = () => {
                 <span className="profile-role-tagline">
                   SFAX est considérée comme le cœur battant de l'économie
                   tunisienne. Les activités principales économiques de Sfax sont
-                  les industries , l'agriculture , la pêche et le commerce.{" "}
+                  les industries agro-alimentaire , l'agriculture , la pêche et le commerce.{" "}
                 </span>
               </span>
             </div>
@@ -82,7 +76,7 @@ const Profile = () => {
             </a>
             
 
-            <Button className="btn2" variant="danger">
+            <Button style={{backgroundColor:'transparent' ,border:'transparent'}} disabled className="btn2" variant="danger">
              
             </Button>
             <a
