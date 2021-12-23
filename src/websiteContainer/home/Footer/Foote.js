@@ -3,7 +3,7 @@ import './Footer.css'
 const Foote = () => {
   return (
     <div className='footer-container'>
-      <div style={{display: 'flex',
+      {/* <div style={{display: 'flex',
 alignItems: 'center',
 alignContent:' center'}} className='footer-parent'>
         
@@ -34,7 +34,7 @@ marginRight: '20px', border:'none'
 
 
 
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -68,7 +68,7 @@ const Profile = () => {
           </div>
           <div className="profile-options">
           
-            <a href="duh.html">
+            <a href="https://fr.wikipedia.org/wiki/Sfax">
                 <Button className="btn1"  variant="secondary">
               {" "}
                voir plus

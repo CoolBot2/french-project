@@ -25,11 +25,12 @@ const PicList = () => {
     zIndex: "500000",
   };
   return (
-    <div style={style}>
+    <div className='contan' >
       <Search />
 
-      <ButtonList />
-      <ColoredLine color="#AA98AB" />
+     <span className='buttons'> <ButtonList /></span>
+      <span className='line'> <ColoredLine  color="#AA98AB" /></span>
+     
     </div>
   );
 };

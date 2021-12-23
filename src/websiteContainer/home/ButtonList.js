@@ -1,38 +1,59 @@
 import React, { useState } from "react";
 import './button.css'
+import ButtonData from "./ButtonsData";
+import { Route, Switch, } from "react-router";
+import { Link } from "react-router-dom";
 const ButtonList = () => {
   const [color, setColor] = useState("#195D9C");
+  const [color1, setColor1] = useState("#195D9C");
+  const [color2, setColor2] = useState("#195D9C");
+  const [color3, setColor3] = useState("#195D9C");
+  const [color4, setColor4] = useState("#195D9C");
+  
   const design={
     backgroundColor: `${color}`,
     transition: "ease all 500ms",
     
   }
+  const design1={
+    backgroundColor: `${color1}`,
+    transition: "ease all 500ms",
+    
+  }
+  const design2={
+    backgroundColor: `${color2}`,
+    transition: "ease all 500ms",
+    
+  }
+  const design3={
+    backgroundColor: `${color3}`,
+    transition: "ease all 500ms",
+    
+  }
+  const design4={
+    backgroundColor: `${color4}`,
+    transition: "ease all 500ms",
+    
+  }
+
   return (
     <div>
-      <div className='list-container'>
-        <div className='parent'>
+        {ButtonData.map(el=>
+        <Link to={`/${el.name}`} >
 
-      <ul style={{listStyle:'none',display:'flex',alignItems: 'center',
-  alignContent:' center'}}>
-       
-      <li>    <button 
-        style={design}  
-        
-        className="rounded-circle"
-      >
-        <img width='60px' height='61px' src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311603.png?token=exp=1636145640~hmac=2e2b3cd02eedaa595b2142f86ce73f8b" alt="" />
-      </button><a href="#">legend</a></li>
-      <li><button style={design} className="rounded-circle"  > <img width='60px' height='61px' src="https://cdn-icons.flaticon.com/png/128/3639/premium/3639103.png?token=exp=1636145640~hmac=696e201db8f28a345d02b4603b36619f" sizes='50px' alt="" /> </button> <a href="#">legend</a></li>
-      <li><button style={design}  className="rounded-circle">  <img src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311603.png?token=exp=1636145640~hmac=2e2b3cd02eedaa595b2142f86ce73f8b" width='60px' height='61px' alt="" /></button><a href="#">legend</a></li>
-      <li><button style={design}  className="rounded-circle">  <img src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311603.png?token=exp=1636145640~hmac=2e2b3cd02eedaa595b2142f86ce73f8b" width='60px' height='61px' alt="" /></button><a href="#">legend</a></li>
-      <li><button style={design}  className="rounded-circle">  <img src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311603.png?token=exp=1636145640~hmac=2e2b3cd02eedaa595b2142f86ce73f8b" width='60px' height='61px' alt="" /></button><a href="#">legend</a></li>
-   
-      <li></li>
-      </ul>
-      
-    
+      <div className='list-container'>
+        <div className='parent' >
+
+          <img style={ { width:'100px', height:'100px'}} src={el.icon} alt="" />
+          <span style={{}}>{el.name}</span>
+
         </div>
       </div>
+        </Link>
+        
+        )}
+
+    
     </div>
   );
 };

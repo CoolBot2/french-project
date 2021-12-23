@@ -1,0 +1,24 @@
+.contan{
+    position: relative;
+    background-color: #DDE7FB;
+    width: 80%;
+    height: 200px;
+    transform: translateX(13%);
+    z-index: 500000;
+}
+@media screen and (max-width: 910px) {
+  .contan{
+    height: 300px;
+  }
+.line{
+  position: absolute;
+  margin-top: 20px;
+}
+.buttons{
+  position: absolute;
+  transform: translate( -15px);
+}
+    
+  
+ 
+}
